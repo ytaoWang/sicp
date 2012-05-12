@@ -39,3 +39,10 @@
 ;        ((= counter 1) 1)
         (else (fib-iter (- counter 1) (+ a b) a)))
   )
+
+
+(define (fib2-iter a b)
+  ((let ((x (+ a b))
+         (y a))
+     (+ x y)))
+)
